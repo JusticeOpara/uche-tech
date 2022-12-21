@@ -99,10 +99,12 @@ textarea::placeholder {
     margin-bottom: 2rem;
     color: #fff;
 }
-.icon-text{
+
+.icon-text {
     text-align: center;
     font-size: 1rem;
 }
+
 form {
     display: grid;
     gap: 8px;
@@ -186,7 +188,7 @@ svg {
     }
 
     .profile {
-        
+
         text-align: center;
     }
 
@@ -211,13 +213,15 @@ svg {
         justify-content: center;
         align-items: center;
     }
-    .icon-text{
+
+    .icon-text {
         font-size: 1rem;
         text-align: center;
     }
+
     .techologies-icon {
         font-size: 2rem;
-         width: 60vh; 
+        width: 60vh;
         margin-bottom: 1rem;
     }
 
@@ -229,7 +233,7 @@ svg {
     .submit {
         width: 80vw;
         height: 8vh;
-
+        color: #fff;
     }
 
     .contact-info {

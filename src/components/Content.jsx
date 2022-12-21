@@ -65,7 +65,7 @@ export default function () {
                      <p className="social-icon">Twitter</p>
                   </a>
 
-                  <a className="brands" href="http://www.instagram.com/ariskwu_uche_anthony_andre_/" >
+                  <a className="brands" href="https://instagram.com/arisukwu_uche_anthony_andre_?igshid=YWJhMjlhZTc=" >
                      <FontAwesomeIcon icon={faInstagram} label="instagram" />
                      <p className="social-icon">Instagram</p>
                   </a>

@@ -48,7 +48,7 @@ export default function Contact() {
                         value={formData.message} />
 
 
-                    <button className="submit">Send it to me</button>
+                    <button className="submit" href="mailto:justiceopara33@gmail.com">Send it to me</button>
                 </form>
             </div>
         </div>
