@@ -1,0 +1,29 @@
+*,html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+  padding-left: 90px;
+  padding-right: 90px;
+  
+}
+@media (max-width:768px){
+
+body{
+  padding: 0px;
+  padding-left: 0px;
+  padding-right:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+}

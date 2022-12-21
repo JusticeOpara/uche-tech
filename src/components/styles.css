@@ -1,0 +1,229 @@
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+
+}
+
+.left-container {
+    width: 35vw;
+    height: 100vh;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: normal;
+    align-items: normal;
+    /* position: fixed; */
+}
+
+.right-container {
+    font-family: 'Ubuntu', sans-serif;
+    width: 40vw;
+    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    flex-wrap: nowrap;
+    border: none;
+}
+
+.right-container::-webkit-scrollbar {
+    display: none;
+}
+
+.hero {
+    color: #FD841F;
+}
+
+.text-highlight {
+    color: #FD841F;
+    
+}
+
+.navbar {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    height: 6vh;
+    /* gap: 20px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: normal;
+    align-items: center;
+    margin-bottom: 10%;
+
+}
+
+
+.nav-btn {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+.nav-btn:active {
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 1.5rem;
+}
+
+.intro {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.download-btn {
+    width: 35vw;
+    height: 60px;
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    /* background-color: rgb(195, 255, 127); */
+    margin-top: 1.2rem;
+    color: inherit;
+    text-decoration: none;
+    background-color: purple;
+}
+
+.download-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.font-icon {
+    font-size: 2.5rem;
+    width: 70%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #fff;
+
+}
+
+.brands {
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-icon {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+
+}
+
+.coffee {
+    font-size: 1rem;
+    color: grey;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+@media (max-width:768px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .left-container {
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        overflow-y: hidden;
+        height: 220vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        background-color: #333;
+    }
+
+    .intro {
+        font-size: 4rem;
+
+    }
+
+    .heading {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .download-btn {
+        width: 60vw;
+        height: 60px;
+    }
+
+    .font-icon {
+        width: 60%;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .footer {
+        margin-top: 2rem;
+    }
+}

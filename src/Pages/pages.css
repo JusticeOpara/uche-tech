@@ -1,0 +1,264 @@
+h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.hero-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: normal;
+    justify-content: normal;
+    gap: 6;
+    padding-bottom: 3rem;
+
+}
+
+.project {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 12vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: #335A87;
+}
+
+.space {
+    background-color: #000;
+    height: 20px;
+}
+
+.project:hover {
+    scale: 1.05;
+}
+
+.project-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.profile {
+    font-size: 1.3rem;
+    /* padding: 1rem;  */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+}
+
+input {
+    width: 38vw;
+    height: 10vh;
+    outline: none;
+    border: 2px solid purple;
+    padding: 4px;
+    font-size: 1rem;
+    background-color: inherit;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+textarea {
+    width: 38vw;
+    height: 12vh;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    border: 2px solid purple;
+    background-color: inherit;
+    font-size: 1rem;
+}
+
+textarea::placeholder {
+    font-size: 1rem;
+}
+
+.techologies-icon {
+    font-size: 2.5rem;
+    width: 70%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.icon-text{
+    text-align: center;
+    font-size: 1rem;
+}
+form {
+    display: grid;
+    gap: 8px;
+    width: 38vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.submit {
+    height: 10vh;
+    width: 38vw;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: purple;
+    border: none;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+
+.question-path {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+svg {
+    color: #fff;
+}
+
+.icon-box {
+
+    color: #fff;
+}
+
+.bold {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+}
+
+.tech-section {
+    padding-top: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (max-width:768px) {
+
+    h2 {
+
+        padding-left: 0px;
+    }
+
+    .tech-section {
+        padding: 0px;
+
+    }
+
+    .hero-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile {
+        
+        text-align: center;
+    }
+
+    form {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech-section {
+        padding: 0%;
+        padding-top: 10px;
+    }
+
+    input {
+        padding: 0px;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon-text{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .techologies-icon {
+        font-size: 2rem;
+         width: 60vh; 
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        padding: 0px;
+        width: 80vw;
+    }
+
+    .submit {
+        width: 80vw;
+        height: 8vh;
+
+    }
+
+    .contact-info {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #About {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #Blogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
