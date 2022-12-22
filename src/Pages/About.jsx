@@ -22,7 +22,7 @@ export default function About() {
                 <div className="techologies-icon">
                     <span className="brands">
                         <FontAwesomeIcon icon={faJenkins} />
-                        <p class="icon-text">Jenkin</p>
+                        <p className="icon-text">Jenkin</p>
                     </span>
 
                     <span className="brands">
