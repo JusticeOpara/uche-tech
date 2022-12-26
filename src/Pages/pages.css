@@ -101,10 +101,12 @@ textarea::placeholder {
     margin-bottom: 2rem;
     color: #fff;
 }
-.icon-text{
+
+.icon-text {
     text-align: center;
     font-size: 1rem;
 }
+
 form {
     display: grid;
     gap: 8px;
@@ -125,6 +127,19 @@ form {
     color: #fff;
     background-color: purple;
     border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit:hover {
+    background-color: #863A6F;
+
+}
+
+.submit:active {
+    background-color: #863A6F;
+    box-shadow: 0 5px purple;
+    transform: translateY(4px);
 }
 
 .contact-info {
@@ -188,7 +203,7 @@ svg {
     }
 
     .profile {
-        
+
         text-align: center;
     }
 
@@ -213,13 +228,15 @@ svg {
         justify-content: center;
         align-items: center;
     }
-    .icon-text{
+
+    .icon-text {
         font-size: 1rem;
         text-align: center;
     }
+
     .techologies-icon {
         font-size: 2rem;
-         width: 60vh; 
+        width: 60vh;
         margin-bottom: 1rem;
     }
 
@@ -231,8 +248,10 @@ svg {
     .submit {
         width: 80vw;
         height: 8vh;
- 
+
+
     }
+
 
     .contact-info {
         padding: 0px;
@@ -263,4 +282,13 @@ svg {
         justify-content: center;
         align-items: center;
     }
+}
+
+@media (max-width:480px) {
+
+    
+    .tech-section{
+     display: none;
+    }
+    
 }

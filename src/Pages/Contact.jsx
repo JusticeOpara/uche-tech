@@ -1,37 +1,35 @@
-import React from "react";
-import { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 import "./pages.css"
 
 export default function Contact() {
-    const [formData, setFormData] = useState({ name: "", email: "",message: "" })
 
-    function handleChange(event) {
-        
-        setFormData(prevFormData => {
-            return {
-                ...prevFormData,
-                [event.target.name]: event.target.value
-            }
-        })
-    }
- 
-     function handleSubmit(event) {
-        event.preventDefault()
-        
-         console.log(formData)
+    const form = useRef();
 
-        // if(formData.vaild === formData.passwordConfirm) {
-        //     console.log("Successfully signed up")
-        // } else {
-        //     console.log("Passwords do not match")
-        //     return
-        // }
-        
-        // if(formData.joinedNewsletter) {
-        //     console.log("Thanks for signing up for our newsletter!")
-        // }
-    }
-    
+    // function handleSubmit(event) {
+    //     event.preventDefault()
+    //     console.log(formData)
+
+    //     emailjs.sendForm('contact_form',  'service_fs4t9nv','form.current','cKKCi2L2m5g0JJszG')
+
+    //   .then((result) => {
+    //       console.log(result.text);
+    //   }, (error) => {
+    //       console.log(error.text);
+    //   });
+    // }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm( 'service_fs4t9nv','contact_form', form.current, 'cKKCi2L2m5g0JJszG')
+            .then((result) => {
+                console.log(result.text,"pass text");
+            }, (error) => {
+                console.log(error.text,"error");
+            });
+    };
+
 
     return (
         <div id="Contact">
@@ -45,30 +43,25 @@ export default function Contact() {
 
                 </div>
 
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={handleSubmit}>
 
                     <input
                         type="text"
                         name="name"
-                        placeholder="What's your name?"
-                        onChange={handleChange}
-                        value={formData.name} />
+                        placeholder="What's your name?" />
 
                     <input
                         type="email"
                         name="email"
                         placeholder="What's your @mail"
-                        onChange={handleChange}
-                        value={formData.email} />
+                    />
 
                     <textarea
                         name="message"
-                        placeholder="What do you have to tell me/offer me"
-                        onChange={handleChange}
-                        value={formData.message} />
+                        placeholder="What do you have to tell me/offer me" />
 
 
-                    <button  type="submit" className="submit" >Send it to me</button>
+                    <button type="submit" value="send" className="submit" >Send it to me</button>
                 </form>
             </div>
         </div>
